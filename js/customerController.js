@@ -47,7 +47,7 @@ function loadData() {
         dataType: "json",
         data: "&operation=getAllCustomers"
     }).done(function (resp) {
-        alert(resp);
+
         for (var i in resp) {
             var tempA = resp[i];
             var row = "<tr><td>" + tempA[0] + "<td><td>" + tempA[1] + "<td><td>" + tempA[2] + "<td><td>" + tempA[3] + "<td><td>" + tempA[4] + "</td></tr>";

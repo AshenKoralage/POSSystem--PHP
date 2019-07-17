@@ -10,11 +10,11 @@
 require_once __DIR__ . "/../business/impl/CustomerBOImpl.php";
 require_once __DIR__ . "/../dto/Customer.php";
 
-$method=$_SERVER["REQUEST_METHOD"];
+$method = $_SERVER["REQUEST_METHOD"];
 
 $customerBo = new CustomerBOImpl();
 
-switch ($method){
+switch ($method) {
 
     case "POST":
         $custID = $_POST['cid'];
@@ -23,7 +23,7 @@ switch ($method){
         $custSalary = $_POST['salary'];
         $custTp = $_POST['tp'];
         $operation = $_POST['operation'];
-        switch ($operation){
+        switch ($operation) {
             case "saveCustomer":
                 $customerTempObject = new Customer($custID, $custname, $custAddress, $custSalary, $custTp);
                 $result = $customerBo->addCustomer($customerTempObject);
@@ -64,7 +64,7 @@ switch ($method){
 
     case "GET":
         $operation = $_GET['operation'];
-        switch ($operation){
+        switch ($operation) {
 
             case "getAllCustomers":
                 echo json_encode($customerBo->getAllCustomers());

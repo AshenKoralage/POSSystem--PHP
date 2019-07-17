@@ -76,7 +76,7 @@
         <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
             <div class="container-fluid">
                 <div class="navbar-wrapper">
-                    <a class="navbar-brand" href="#pablo">Manage Customer</a>
+                    <a class="navbar-brand" href="#pablo">Manage Items</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -145,29 +145,24 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="card">
-                        <div class="card-header card-header-warning">
-                            <h4 class="card-title">Item Table</h4>
-                        </div>
-                        <div class="card-body table-responsive">
-                            <table class="table">
-                                <thead class="thead-light">
-                                <tr>
-                                    <th scope="col">Item Code</th>
-                                    <th scope="col">Item Name</th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
-                                </tr>
-                                </thead>
-                                <tbody id="itemTBody">
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Item Code</th>
+                    <th scope="col">Item Name</th>
+                    <th scope="col">Unit Price</th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Other Details</th>
+                </tr>
+                </thead>
+            </table>
+            <table class="table">
+                <thead class="thead-light">
+                </thead>
+                <tbody id="itemTBody">
+
+                </tbody>
+            </table>
         </div>
         <footer class="footer">
             <div class="container-fluid">
